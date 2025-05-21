@@ -1,0 +1,5 @@
+FROM nginx
+WORKDIR  /root
+RUN apt-get update && apt-get install git -y maven -y
+RUN touch file12 file13 file14 file15
+CMD   ["/bin/bash"]
