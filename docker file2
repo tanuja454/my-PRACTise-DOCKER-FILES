@@ -1,0 +1,8 @@
+FROM nginx
+WORKDIR  /root
+RUN apt-get update && apt-get install maven -y
+RUN touch file12 file13 file14 file15
+CMD  apt-get install tree -y
+
+  #command:
+docker run -it ammu /bin/bash -c "apt-get update && apt-get install git -y && /bin/bash"
